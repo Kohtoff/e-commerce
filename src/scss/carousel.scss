@@ -1,0 +1,45 @@
+@import './vars.scss';
+
+.carousel-container{
+    padding: 0 85px;
+    margin-bottom: 120px;
+    margin-top: 80px;
+}
+
+.carousel-nav {
+  margin-bottom: 20px;
+  & ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 10px 20px;
+    border-bottom: 2px solid $not-active;
+    color: $not-active-text;
+    transition: 0.2s all ease-in;
+
+    &.active {
+      color: $black;
+      border-bottom: 2px solid $accent;
+    }
+  }
+}
+
+.carousel__title{
+  font-size: $title;
+  margin-bottom: 30px;
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cards-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}

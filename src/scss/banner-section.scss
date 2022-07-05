@@ -1,0 +1,67 @@
+@import '../scss/vars.scss';
+
+.banner-section {
+  display: grid;
+  grid-template-columns: repeat(4fr, 20%);
+  grid-template-rows: repeat(5fr, calc(960 / 5));
+  height: 550px;
+  gap: 5px;
+  margin-bottom: 40px;
+
+  &__item {
+    &--main {
+      background: #fff;
+      grid-column: 1/3;
+      grid-row: 1/5;
+
+      & .mask .banner-item__content {
+        position: static;
+        justify-content: center;
+      }
+    }
+    &--2 {
+      background: #e324;
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
+    &--3 {
+      background: rgb(207, 0, 0);
+      grid-column: 3/4;
+      grid-row: 3/5;
+    }
+  }
+}
+
+.mask {
+  background: rgba(#000, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.banner-item {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    align-items: baseline;
+  }
+  &__header {
+    font-size: 36px;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  &__desc {
+    font-size: $small;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,149 @@
+@import './vars.scss';
+
+.btn {
+  font-size: $small;
+  transition: all 0.2s ease-in;
+  width: 140px;
+  height: 45px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &--centered {
+    margin: auto;
+  }
+
+  &--bordered {
+    border: 1px solid $accent;
+  }
+
+  &--rounded{
+    border-radius: 25px;
+  }
+
+  &--string {
+    background: transparent;
+    color: $not-active-text;
+    width: unset;
+    height: unset;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  &--outlined {
+    background: transparent;
+    color: $white;
+    padding: 0;
+    opacity: 0.7;
+    text-align: left;
+    width: max-content;
+    letter-spacing: 0;
+    height: auto;
+
+    &::after,
+    &::before {
+      backface-visibility: hidden;
+      border: 1px solid rgba(#fff, 0);
+      bottom: 0px;
+      content: ' ';
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      transition: all 280ms ease-in-out;
+      width: 0;
+    }
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      opacity: 1;
+      //   transform: scale(1.05);
+      letter-spacing: 2px;
+
+      &::after,
+      &::before {
+        backface-visibility: hidden;
+        border-color: #fff;
+        transition: width 350ms ease-in-out;
+        width: 70%;
+      }
+
+      &::before {
+        bottom: auto;
+        top: 0;
+        width: 70%;
+      }
+    }
+  }
+
+  &--filled-primary {
+    background-color: $accent;
+    color: $white;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      background: #fff;
+      content: '';
+      height: 155px;
+      left: -75px;
+      opacity: 0.2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: 1;
+    }
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      &:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+  }
+
+  &--filled {
+    background: $white;
+    color: $black;
+    padding: 13px 16px;
+    text-align: center;
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      color: $white;
+      background: $accent;
+    }
+  }
+
+  &--size-sm{
+    width: 100px;
+    height: 35px;
+    font-size: $label;
+    padding: 0;
+
+  }
+
+  &--size-l{
+    width: 320px;
+  }
+
+  &--font-size-sm {
+    font-size: $label;
+  }
+
+  &--font-size-regular{
+    font-size: $small;
+  }
+
+  &--size-full-width{
+    width: 100%;
+  }
+}

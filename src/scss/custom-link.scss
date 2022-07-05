@@ -1,0 +1,19 @@
+@import './vars.scss';
+
+.link{
+    text-decoration: none;
+    transition: all .2s ease-in;
+    
+
+    &--default{
+        color: $black;
+    }
+
+    &--grey{
+        color: $not-active-text;
+    }
+
+    &:hover{
+        color: $accent
+    }
+}

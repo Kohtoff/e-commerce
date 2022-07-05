@@ -1,0 +1,26 @@
+@import './vars.scss';
+
+
+.icon-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: $label;
+
+    &:hover{
+        color: $accent;
+        svg{
+            fill: $accent;
+        }
+    }
+
+
+}

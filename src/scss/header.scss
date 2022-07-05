@@ -1,0 +1,55 @@
+@import './vars.scss';
+
+.header-container {
+  padding: 15px 105px;
+  box-shadow: 1px 1px 5px -1px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+  padding-bottom: 20px;
+  padding: 15px 105px;
+
+  &__adress {
+    text-align: left;
+    color: $black;
+    font-size: $label;
+  }
+
+  &__logo {
+    text-align: center;
+    h1 {
+      color: $accent;
+      text-transform: uppercase;
+      font-size: 64px;
+    }
+
+    span {
+      color: $tooltip;
+      text-align: center;
+      font-size: $label;
+    }
+  }
+
+  &__buttons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 10%;
+  }
+}
+a {
+  text-decoration: none;
+}
+a.active {
+  color: $accent;
+  fill: $accent;
+  button {
+    color: $accent;
+  }
+}
