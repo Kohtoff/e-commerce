@@ -1,0 +1,12 @@
+@import './vars.scss';
+
+.title-h{
+    &2{
+        font-size: $h2;
+        margin-bottom: 30px;
+    }
+
+    &4{
+        font-size: $small;
+    }
+}

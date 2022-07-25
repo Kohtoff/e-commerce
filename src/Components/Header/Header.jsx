@@ -1,4 +1,5 @@
-import React from 'react';
+// import React, {useEffect} from 'react';
+// import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import '../../scss/header.scss';
 import IconBtn from '../IconBtn/IconBtn';
@@ -6,8 +7,14 @@ import Logo from '../Logo/Logo';
 import NavBar from '../NavBar/NavBar';
 
 export default function Header() {
+
+
+
+
+
+
   return (
-    <div className="header-container">
+    <div className={`header-container `}>
       <header className="header">
         <div className="header__adress">
           <p className="adress">Zaporozhzhye, Soborna street, 26</p>

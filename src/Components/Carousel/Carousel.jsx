@@ -7,6 +7,7 @@ export default function Carousel(props) {
   const navItems = [{ title: 'New products' }, { title: 'Collections' }, { title: 'Sales' }];
   const goods = [
     {
+      id: 1,
       title: 'Nice bike',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 43,
@@ -14,6 +15,7 @@ export default function Carousel(props) {
       photo: '',
     },
     {
+      id: 2,
       title: 'Silly umbrella',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 999,
@@ -21,6 +23,7 @@ export default function Carousel(props) {
       photo: '',
     },
     {
+      id: 3,
       title: 'World of ants',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 12,
@@ -28,6 +31,7 @@ export default function Carousel(props) {
       photo: '',
     },
     {
+      id: 4,
       title: 'X-ray commandos',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 1232,
@@ -35,6 +39,7 @@ export default function Carousel(props) {
       photo: '',
     },
     {
+      id: 5,
       title: 'Sport book',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 166,

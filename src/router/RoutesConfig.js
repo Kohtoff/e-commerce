@@ -4,6 +4,7 @@ export const routesKeys = {
     main: 'main',
     delivery: 'delivery',
     product: 'product',
+    order: 'order'
 }
 
 export const routesConfig = [
@@ -32,4 +33,9 @@ export const routesConfig = [
         path: '/product/:id',
         title: '',
     },
+    {
+        key: 'order',
+        path: '/order',
+        title: 'Order'
+    }
 ]

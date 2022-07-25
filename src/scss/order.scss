@@ -1,0 +1,28 @@
+@import './vars.scss';
+
+.order{
+    padding: 25px 200px;
+    display: flex;
+    gap: 30px;
+    background-color: $bg;
+
+    &__fields{
+        width: 55%;
+    }
+
+    &__row{
+        padding: 25px 0;
+
+    }
+    &__input-container{
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &-info{
+        flex-grow: 1;
+    }
+
+}

@@ -2,8 +2,15 @@
 
 .header-container {
   padding: 15px 105px;
-  box-shadow: 1px 1px 5px -1px;
+  box-shadow: 1px 1px 3.6px -2.4px;
   position: relative;
+
+  &--scrolled{
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    background: $white;
+  }
 }
 
 .header {

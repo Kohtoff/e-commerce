@@ -9,9 +9,9 @@
   background-color: $bg;
   gap: 30px;
 
-    &--empty{
-        flex-direction: column;
-    }
+  &--empty {
+    flex-direction: column;
+  }
 
   &__title {
     font-size: $h2;
@@ -41,41 +41,5 @@
     margin-top: 20px;
     justify-content: center;
     align-items: center;
-  }
-
-}
-
-.order-info {
-  top: 20px;
-  position: sticky;
-  align-self: baseline;
-  padding: 15px;
-  flex-grow: 0.3;
-  border: 1px solid $not-active;
-
-  &__title{
-    font-size: $large;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  ul{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  &__service,
-  &__total{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  &__total{
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid $not-active;
-    margin-bottom: 25px;
   }
 }
