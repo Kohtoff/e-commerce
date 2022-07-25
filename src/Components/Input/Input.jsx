@@ -7,8 +7,6 @@ export default function Input(props) {
 
   const CustomTag = mode ? `${mode}` : 'input'
 
-//   const ConditionalWrapper = ({ condition, wrapper, children }) =>
-//     condition ? wrapper(children) : children;
 
   return (
     <ConditionalWrapper

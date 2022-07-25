@@ -4,7 +4,7 @@ import H from '../Components/H/H';
 import Input from '../Components/Input/Input';
 import OrderInfo from '../Components/OrderInfo/OrderInfo';
 import OrderRow from '../Components/OrderRow/OrderRow';
-import SelectRow from '../Components/RadioRow/RadioRow';
+import RadioRow from '../Components/RadioRow/RadioRow';
 
 import '../scss/order.scss';
 
@@ -54,8 +54,8 @@ export default function OrderPage() {
 
   const options = {
     payment: [
-      {title: 'Online'},
-      {title: 'on delivery with cart'},
+      {title: 'Online', imgs: ["Visa.png", 'MasterCard.png']},
+      {title: 'on delivery with cart', imgs: ["Visa.png", 'MasterCard.png']},
       {title: 'on delivery with cash'}
 
     ],
@@ -74,11 +74,11 @@ export default function OrderPage() {
         <OrderRow fields={fields.personalInfo}>Personal info</OrderRow>
         <Divider />
         <OrderRow fields={fields.delivery}>Delivery</OrderRow>
-        <OrderRow fields={fields.adress} inLineFields={['house']}>
+        <OrderRow fields={fields.adress} inLineFields={['house number', 'apartment number']}>
           Adress
         </OrderRow>
-        <SelectRow options={options.payment}>Payment options</SelectRow>
-        <SelectRow options={options.delivery}>Delivery options</SelectRow>
+        <RadioRow options={options.payment}>Payment options</RadioRow>
+        <RadioRow options={options.delivery}>Delivery options</RadioRow>
         <Divider />
         <Input placeholder={'Message'} mode="textarea" floatingLabel={true}/>
 
