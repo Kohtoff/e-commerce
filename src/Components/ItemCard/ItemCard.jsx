@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../../scss/card.scss';
 import IconBtn from '../IconBtn/IconBtn';
+import PriceSpan from '../PriceSpan/PriceSpan';
 
 export default function ItemCard(props) {
   const { data, size } = props;
@@ -17,7 +18,7 @@ export default function ItemCard(props) {
           ))}
         </div>
         <h2 className="card__header">{data.title}</h2>
-        <span className="card__price">{data.price} usd</span>
+        <PriceSpan>{data.price}</PriceSpan>
       </Link>
     </article>
   );

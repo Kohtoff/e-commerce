@@ -79,7 +79,7 @@ export default function CartPage() {
               </div>
               <ProductList data={cart} />
             </div>
-            <OrderInfo data={cart} />
+            <OrderInfo data={cart}/>
           </>
         )}
       </div>

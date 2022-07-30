@@ -1,0 +1,10 @@
+@import './vars.scss';
+
+.sticky-block{
+    top: 20px;
+    position: sticky;
+    align-self: baseline;
+    padding: 15px;
+    border: 1px solid $not-active;
+
+}

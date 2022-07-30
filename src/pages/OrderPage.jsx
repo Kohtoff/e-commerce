@@ -83,7 +83,7 @@ export default function OrderPage() {
         <Input placeholder={'Message'} mode="textarea" floatingLabel={true}/>
 
       </div>
-      <OrderInfo data={cart} extended={true}  />
+      <OrderInfo data={cart} extended={true}/>
     </div>
   );
 }

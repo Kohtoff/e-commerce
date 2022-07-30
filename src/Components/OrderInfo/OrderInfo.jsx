@@ -2,11 +2,12 @@ import React from 'react';
 import MyLink from '../MyLink/MyLink';
 import '../../scss/order-info.scss';
 import Divider from '../Divider/Divider';
+import StickyBlock from '../StickyBlock/StickyBlock';
 
 export default function OrderInfo(props) {
   const { data, extended } = props;
   return (
-    <div className="order-info">
+    <StickyBlock className={extended ? 'order-info' : 'order-info--small'}>
       {extended && (
         <ul>
           {data.map((item, index) => (
@@ -34,6 +35,6 @@ export default function OrderInfo(props) {
       <MyLink to="/order" type="filled-primary" size="full-width">
         Make order
       </MyLink>
-    </div>
+    </StickyBlock>
   );
 }
