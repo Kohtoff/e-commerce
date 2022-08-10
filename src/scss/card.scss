@@ -45,26 +45,7 @@
     height: auto;
   }
 
-  &__color-picker {
-    display: flex;
-    gap: 5px;
-
-    & div {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 1px solid rgba($color: $black, $alpha: .1);
-      cursor: pointer;
-
-      &:hover{
-          transform: scale(1.05);
-      }
-
-      &.active{
-        border: 2px solid rgba($color: $black, $alpha: .4);
-      }
-    }
-  }
+  
   &__button-container{
     display: flex;
   }

@@ -1,0 +1,43 @@
+@import './vars.scss';
+
+
+.option-picker {
+    display: flex;
+    gap: 5px;
+
+    &__item {
+      width: 18px;
+      height: 18px;
+      border: 1px solid rgba($color: $black, $alpha: .1);
+      cursor: pointer;
+      padding: 2px;
+      box-sizing: border-box;
+
+      &--rounded{
+        border-radius: 50%;
+        &:active{
+            border: 2px solid rgba($color: $black, $alpha: .4);
+          }
+      }
+
+      &--squared{
+        width: 64px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s all ease-in;
+
+        &:active{
+            background-color: $accent;
+            color: $white;
+        }
+      }
+
+      &:hover{
+          transform: scale(1.05);
+      }
+
+
+    }
+  }

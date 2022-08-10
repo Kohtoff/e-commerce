@@ -1,13 +1,46 @@
 @import './vars.scss';
 
-.container{
-    margin-top: 20px;
-    display: flex;
+.container {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
 }
 
-.product{
+.right-side{
+    max-width: 50%;
+}
 
-    &__info-block{
+.product {
+  &__info-block {
+    display: flex;
+  gap: 20px;
+  flex-direction: column;
+  }
 
-    }   
+  &__controller {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & button {
+      width: 100%;
+    }
+  }
+}
+
+.extra-info{
+    padding: 40px 100px;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+            }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
 }

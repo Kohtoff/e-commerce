@@ -12,7 +12,7 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 43,
       colors: ['#e91111', '#e9c111'],
-      photo: '',
+      photo: 'Reactangle 14.png',
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 999,
       colors: ['#e91111', '#e9c111'],
-      photo: '',
+      photo: 'Reactangle 8.png',
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 12,
       colors: ['#e91111', '#e9c111'],
-      photo: '',
+      photo: 'Reactangle 14.png',
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 1232,
       colors: ['#e91111', '#e9c111'],
-      photo: '',
+      photo: 'Reactangle 8.png',
     },
     {
       id: 5,
@@ -44,14 +44,14 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 166,
       colors: ['#e91111', '#e9c111'],
-      photo: '',
+      photo: 'Reactangle 14.png',
     },
   ];
+
   return (
     <section className="carousel-container">
       {type === 'default' ?
       <CarouselNav data={navItems} /> : <h2 className='carousel__title'>{children}</h2>}
-      {/* <CarouselNav data={navItems}/> */}
       <div className="cards-container">
         {goods.map((item, index) => (
           <ItemCard data={item} key={index} />
