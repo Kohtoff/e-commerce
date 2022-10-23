@@ -15,7 +15,7 @@ export default function CatalogPage() {
       isSale: true,
       discountValue: 15,
       amount: 2,
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 31, 32, 33, 34]
     },
     {
@@ -26,7 +26,7 @@ export default function CatalogPage() {
       isSale: true,
       discountValue: 15,
       amount: 2,
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 34]
     },
     {
@@ -35,7 +35,7 @@ export default function CatalogPage() {
       size: 'XXL',
       price: '2.3',
       amount: '3',
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 31, 32, 33, 34]
     },
     {
@@ -46,7 +46,7 @@ export default function CatalogPage() {
       isSale: true,
       discountValue: 15,
       amount: 2,
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 31, 32, 33, 34]
     },
     {
@@ -57,7 +57,7 @@ export default function CatalogPage() {
       isSale: true,
       discountValue: 15,
       amount: 2,
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 31, 32, 33, 34]
     },
     {
@@ -66,7 +66,7 @@ export default function CatalogPage() {
       size: 'XXL',
       price: '2.3',
       amount: '3',
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 31, 32, 33, 34]
     },
     {
@@ -77,7 +77,7 @@ export default function CatalogPage() {
       isSale: true,
       discountValue: 15,
       amount: 2,
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 34]
     },
     {
@@ -88,7 +88,7 @@ export default function CatalogPage() {
       isSale: true,
       discountValue: 15,
       amount: 2,
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 31, 32, 33, 34]
     },
     {
@@ -97,7 +97,7 @@ export default function CatalogPage() {
       size: 'XXL',
       price: '2.3',
       amount: '3',
-      media: '/Rectangle 14.png',
+      media: '/Rectangle14.png',
       sizes: [30, 31, 32, 33, 34]
     },
   ]

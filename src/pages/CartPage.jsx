@@ -5,42 +5,46 @@ import EmptyCartSvg from '../Components/EmptyCartSvg/EmptyCartSvg';
 import MyLink from '../Components/MyLink/MyLink';
 import OrderInfo from '../Components/OrderInfo/OrderInfo';
 import ProductInCart from '../Components/ProductInCart/ProductInCart';
+import {useCart} from '../hooks/useCart'
 
 import '../scss/cart.scss';
 
 export default function CartPage() {
-  const cart = [
-    {
-      title: 'sport bike',
-      color: 'green',
-      size: 'small',
-      price: '2000',
-      isSale: true,
-      discountValue: 15,
-      amount: 2,
-      media: '/Rectangle 14.png',
-    },
-    {
-      title: 'sport bike',
-      color: 'green',
-      size: 'small',
-      price: '2000',
-      isSale: true,
-      discountValue: 15,
-      amount: 2,
-      media: '/Rectangle 14.png',
-    },
-    {
-      title: 'Burger',
-      color: 'default',
-      size: 'XXL',
-      price: '2.3',
-      amount: '3',
-      media: '/Rectangle 14.png',
-    },
-  ];
+  // const cart = [
+  //   {
+  //     title: 'sport bike',
+  //     color: 'green',
+  //     size: 'small',
+  //     price: '2000',
+  //     isSale: true,
+  //     discountValue: 15,
+  //     amount: 2,
+  //     media: '/Rectangle 14.png',
+  //   },
+  //   {
+  //     title: 'sport bike',
+  //     color: 'green',
+  //     size: 'small',
+  //     price: '2000',
+  //     isSale: true,
+  //     discountValue: 15,
+  //     amount: 2,
+  //     media: '/Rectangle 14.png',
+  //   },
+  //   {
+  //     title: 'Burger',
+  //     color: 'default',
+  //     size: 'XXL',
+  //     price: '2.3',
+  //     amount: '3',
+  //     media: '/Rectangle 14.png',
+  //   },
+  // ];
 
   // const cart = []
+
+  const cart = useCart();
+  const {cartArray} = cart
 
   const ProductList = (props) => {
     const { data } = props;
@@ -55,8 +59,8 @@ export default function CartPage() {
 
   return (
     <>
-      <div className={'cart ' + (cart.length === 0 ? 'cart--empty' : '')}>
-        {cart.length === 0 ? (
+      <div className={'cart ' + (cartArray.length === 0 ? 'cart--empty' : '')}>
+        {cartArray.length === 0 ? (
           <>
             <EmptyCartSvg />
             <h2 className="cart__title">Cart is empty :(</h2>
@@ -74,12 +78,12 @@ export default function CartPage() {
           <>
             <div className="cart__body">
               <div className="cart__topbar">
-                <h1 className="cart__title">{cart.length} products in cart</h1>
+                <h1 className="cart__title">{cartArray.length} products in cart</h1>
                 <Button type="string">Clear cart</Button>
               </div>
-              <ProductList data={cart} />
+              <ProductList data={cartArray} />
             </div>
-            <OrderInfo data={cart}/>
+            <OrderInfo data={cartArray}/>
           </>
         )}
       </div>

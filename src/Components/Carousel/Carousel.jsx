@@ -12,7 +12,8 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 43,
       colors: ['#e91111', '#e9c111'],
-      photo: 'Reactangle 14.png',
+      img: 'Rectangle14.png',
+      size: 'S'
     },
     {
       id: 2,
@@ -20,7 +21,8 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 999,
       colors: ['#e91111', '#e9c111'],
-      photo: 'Reactangle 8.png',
+      size: 'S',
+      img: 'Rectangle8.png',
     },
     {
       id: 3,
@@ -28,7 +30,8 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 12,
       colors: ['#e91111', '#e9c111'],
-      photo: 'Reactangle 14.png',
+      size: 'S',
+      img: 'Rectangle14.png',
     },
     {
       id: 4,
@@ -36,7 +39,8 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 1232,
       colors: ['#e91111', '#e9c111'],
-      photo: 'Reactangle 8.png',
+      size: 'S',
+      img: 'Rectangle8.png',
     },
     {
       id: 5,
@@ -44,7 +48,8 @@ export default function Carousel(props) {
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta?',
       price: 166,
       colors: ['#e91111', '#e9c111'],
-      photo: 'Reactangle 14.png',
+      size: 'S',
+      img: 'Rectangle14.png',
     },
   ];
 

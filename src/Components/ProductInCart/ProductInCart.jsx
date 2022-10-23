@@ -5,13 +5,15 @@ import '../../scss/productInCart.scss'
 
 export default function ProductInCart(props) {
   const { data } = props;
-  const { title, color, size, amount, price, media, isSale, discountValue } = data;
+  const { title, color, size, amount, price, img, isSale, discountValue } = data;
   const totalPrice = (+amount * +price).toFixed(2);
+
+  console.log(amount, price)
 
   return (
     <li className="product-in-cart">
       <div className="product-in-cart__media">
-        <img src={process.env.PUBLIC_URL + media} alt="product`s" />
+        <img src={process.env.PUBLIC_URL + img} alt="product`s" />
       </div>
       <div className="product-in-cart__info-container">
         <h3 className="product-in-cart__title">{title}</h3>
@@ -24,7 +26,7 @@ export default function ProductInCart(props) {
       <div className="product-in-cart__prices">
         <div></div>
         <span className="product-in-cart__price-calculation">
-          {+amount} x ${(+price).toFixed(2)}
+          {+amount} x ${price}
         </span>
         <span
           className={
